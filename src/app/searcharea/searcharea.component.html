@@ -1,18 +1,20 @@
-<div col-md-4 offset-md-3>
-  <mat-form-field>
-    <input
-      matInput
-      placeholder="Enter your password"
-      [type]="hide ? 'password' : 'text'"
-    />
-    <button
-      mat-icon-button
-      matSuffix
-      (click)="hide = !hide"
-      [attr.aria-label]="'Hide password'"
-      [attr.aria-pressed]="hide"
-    >
-      <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
-    </button>
-  </mat-form-field>
+<div class="row">
+  <div class="col-4 mx-auto" id="search-component">
+    <mat-form-field id="search-field">
+      <input
+        matInput
+        placeholder="Yes you can write here!!"
+        [type]="hide ? 'password' : 'text'"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
 </div>
