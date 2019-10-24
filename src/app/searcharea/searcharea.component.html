@@ -1,20 +1,21 @@
 <div class="row">
   <div class="col-4 mx-auto" id="search-component">
-    <mat-form-field id="search-field">
-      <input
-        matInput
-        placeholder="Yes you can write here!!"
-        [type]="hide ? 'password' : 'text'"
-      />
-      <button
-        mat-icon-button
-        matSuffix
-        (click)="hide = !hide"
-        [attr.aria-label]="'Hide password'"
-        [attr.aria-pressed]="hide"
-      >
-        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
-      </button>
-    </mat-form-field>
+    <div class="row">
+      <div class="col-10">
+        <mat-form-field id="search-field">
+          <input
+            matInput
+            placeholder="Need to discuss about the fab-icon"
+            [type]="hide ? 'password' : 'text'"
+          />
+        </mat-form-field>
+      </div>
+      <div>
+        <!-- This needs to be discussed around, a mini fab or a regular fab -->
+        <button mat-mini-fab aria-label="Example icon-button with a heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
