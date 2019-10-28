@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -7,6 +8,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatCardModule} from '@angular/material/card';
 
 import {
   MatInputModule,
@@ -22,6 +24,7 @@ import { SearchareaComponent } from "./searcharea/searcharea.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     MatInputModule,
@@ -29,7 +32,8 @@ import { SearchareaComponent } from "./searcharea/searcharea.component";
     MatSelectModule,
     MatIconModule,
     MatToolbarModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
