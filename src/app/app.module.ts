@@ -18,9 +18,10 @@ import {
 } from "@angular/material";
 import { FormsModule } from "@angular/forms";
 import { SearchareaComponent } from "./searcharea/searcharea.component";
+import { LoginSignupComponent } from './login-signup/login-signup.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, SearchareaComponent],
+  declarations: [AppComponent, NavbarComponent, SearchareaComponent, LoginSignupComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
